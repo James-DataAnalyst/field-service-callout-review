@@ -1,0 +1,57 @@
+# Only these release files and source folders are allowed at the root.
+/*
+!/.env.example
+!/.gitignore
+!/README.md
+!/package.json
+!/package-lock.json
+!/proxy.ts
+!/tsconfig.json
+!/app/
+!/lib/
+!/public/
+!/supabase/
+!/tests/
+!/assets/
+/assets/*
+!/assets/readme/
+/assets/readme/*
+!/assets/readme/*.png
+
+# Personal files and generated output stay on the laptop.
+docs/
+private-data/
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+*.log
+*.[Zz][Ii][Pp]
+*.7z
+*.tar
+*.gz
+
+.env
+.env.*
+!/.env.example
+supabase/.temp/
+supabase/.branches/
+
+# Only these five fictional input CSVs belong in the release.
+*.[Cc][Ss][Vv]
+!/public/samples/callouts-valid.csv
+!/public/samples/callouts-rejected.csv
+!/public/samples/shifts-valid.csv
+!/public/samples/Northline Dispatch 2025-10.csv
+!/public/samples/Northline Shift Roster 2025-10.csv
+
+# Keep local-only artifacts out of the portfolio.
+*[Rr][Ee][Cc][Oo][Rr][Dd][Ii][Nn][Gg]*
+
+.DS_Store
+Thumbs.db
